@@ -1,0 +1,33 @@
+.container-fluid {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 62px 36px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img 1 img 2 img 3"
+      "img 4 img 5 img 6";
+    position: relative;  
+  }
+  
+  .img 1 { grid-area: img 1; }
+  
+  .img 2 { grid-area: img 2; }
+  
+  .img 3 { grid-area: img 3; }
+  
+  .img 4 { grid-area: img 4; }
+  
+  .img 5 { grid-area: img 5; }
+  
+  .img 6 { grid-area: img 6; }
+
+  .layer:hover {
+    position: absolute;
+    background-color: teal;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+  }
